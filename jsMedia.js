@@ -41,7 +41,7 @@
         return div.offsetWidth == 1;
       }, 
       watch: function(query, onEnter, onExit) {
-        var isActive = false;
+        var isActive = me.isMedia(query);
         onEnter = onEnter || noop;
         onExit = onExit || noop;
 
