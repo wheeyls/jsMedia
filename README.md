@@ -1,7 +1,9 @@
 jsMedia
 =======
 
-This is a very simple function; I'm wrapping Nicholas Zakas' "isMedia" function (http://www.nczonline.net/blog/2012/01/19/css-media-queries-in-javascript-part-2/) and fire off events whenever you move into or out of a given media query.
+This is a simple media-query plugin. I'm wrapping Nicholas Zakas' "isMedia" function (http://www.nczonline.net/blog/2012/01/19/css-media-queries-in-javascript-part-2/) 
+
+You can either query against the current media state directly with "isMedia," or else watch the window continuously with "watch" to respond to changes in the page's state.
 
 Example
 =======
