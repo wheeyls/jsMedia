@@ -1,6 +1,7 @@
 /**
  * Nicholas C. Zakas 'isMedia' function, with some listeners. 
  */
+
 (function($){
     var div
       , me
@@ -26,6 +27,7 @@
       setupTimer = noop;
     };
 
+
     me = {
       isMedia: function(query) {
         //if the <div> doesn't exist, create it and make sure it's hidden
@@ -41,7 +43,7 @@
         return div.offsetWidth == 1;
       }, 
       watch: function(query, onEnter, onExit) {
-        var isActive = me.isMedia(query);
+        var isActive = false;
         onEnter = onEnter || noop;
         onExit = onExit || noop;
 
@@ -56,8 +58,10 @@
           }
           isActive = current;
         });
+
+        windowChanged=true;
       }
     };
 
     $.jsMedia = me;
-})(window.jQuery || window.ender);
+}(window.jQuery || window.ender));
