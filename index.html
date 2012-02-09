@@ -3,9 +3,9 @@
   <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
   <script src="jsMedia.js"></script>
   <script>
-    $(function() {
-      var enter = function(q) {console.log("entering: " +q)}
-        , exit = function(q) {console.log("exiting: " +q)}
+    $(document).ready(function() {
+      var enter = function(q) {console.log("entering: " + q)}
+        , exit = function(q) {console.log("exiting: " + q)}
         ;
       $.jsMedia.watch("screen and (min-width:500px)", enter, exit);
       $.jsMedia.watch("screen and (min-width:800px)", enter, exit);

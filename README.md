@@ -5,8 +5,8 @@ This is a very simple function; I'm wrapping Nicholas Zakas' "isMedia" function 
 
 Example
 =======
-$.jsMedia.isMedia("screen and (max-width: 500px)"); // true or false
-$.jsMedia.watch("screen and (max-width: 500px)",
-  function(query) { /* fire on entering */ },
-  function(query) { /* fire on exiting */ }
-);
+    $.jsMedia.isMedia("screen and (max-width: 500px)"); // true or false
+    $.jsMedia.watch("screen and (max-width: 500px)",
+      function(query) { /* fire on entering */ },
+      function(query) { /* fire on exiting */ }
+    );

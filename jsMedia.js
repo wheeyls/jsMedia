@@ -60,4 +60,4 @@
     };
 
     $.jsMedia = me;
-})(jQuery);
+})(window.jQuery || window.ender);
